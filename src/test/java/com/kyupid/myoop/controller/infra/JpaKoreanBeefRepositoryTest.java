@@ -1,5 +1,7 @@
 package com.kyupid.myoop.controller.infra;
 
+import com.kyupid.myoop.domain.entity.KoreanBeef;
+import com.kyupid.myoop.infra.JpaKoreanBeefRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -47,9 +50,7 @@ class JpaKoreanBeefRepositoryTest {
             @Test
             @DisplayName("비어 있는 List를 반환한다")
             void it_returns_empty_list() {
-                final List<KoreanBeef> actual = subject();
-
-                assertThat(actual).isEmpty();
+                assertThat(subject()).isEmpty();
             }
         }
 
@@ -64,9 +65,7 @@ class JpaKoreanBeefRepositoryTest {
             @Test
             @DisplayName("비어 있지 않은 List를 반환한다")
             void it_returns_not_empty_list() {
-                final List<KoreanBeef> actual = subject();
-
-                assertThat(actual).isNotEmpty();
+                assertThat(subject()).isNotEmpty();
             }
         }
     }
