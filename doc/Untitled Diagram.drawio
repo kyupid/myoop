@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-06T01:52:56.883Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="5WkO7GfJ0hcg2tUJ3luw" version="17.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-06T02:27:44.451Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="bm-BaEBqg1erohkaXuTB" version="17.2.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="658" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -115,11 +115,14 @@
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-37" value="order_price" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="233" y="466" width="157" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-27" target="pvZoqLeMWJgB5qrzdJfA-35">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-27" target="pvZoqLeMWJgB5qrzdJfA-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-31" target="pvZoqLeMWJgB5qrzdJfA-27">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-31" target="pvZoqLeMWJgB5qrzdJfA-27">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-45" value="1. 식별관계 -&amp;gt; 반드시 부모데이터가 존재해야 자식데이터가 존재한다&lt;br&gt;&amp;nbsp; &amp;nbsp; 비식별관계 -&amp;gt;&amp;nbsp; &amp;nbsp;부모데이터가 없어도 자식데이터를 생성할수있다" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="190" y="520" width="340" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
