@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-08-06T02:27:44.451Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="bm-BaEBqg1erohkaXuTB" version="17.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-08T12:47:41.955Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="7YBrhYILDaauMvmYWgR3" version="17.2.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="658" dy="392" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -67,43 +67,43 @@
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-21" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="430" y="166" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-24" value="1. Order와 Product는 다대다 관계이다.&lt;br&gt;&lt;div&gt;&lt;span&gt;2. JPA 다대다 직접적인 연관관계 매핑은 문제가 있으므로 중간에 테이블을 둔다&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; 2-1. 예를들어 orderPrice와 같은 프로퍼티를 넣을 수 없다&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;3. OrderProduct -&amp;gt; Product의 화살표는 단방향 관계를 나타낸다.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-24" value="1. Order와 Product는 다대다 관계이다.&lt;br&gt;&lt;div&gt;&lt;span&gt;2. JPA 다대다 직접적인 연관관계 매핑은 문제가 있으므로 중간에 클래스를 둔다&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; 2-1. 예를들어 orderPrice와 같은 프로퍼티를 넣을 수 없다&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;3. OrderProduct -&amp;gt; Product의 화살표는 단방향 관계를 나타낸다.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="180" y="275" width="390" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-25" value="order_product" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-25" value="order_product" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="233" y="360" width="160" height="138" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-26" value="order_product_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-26" value="order_product_id (PK)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-27" value="order_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-27" value="order_id (FK)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
+          <mxGeometry y="50" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-28" value="product_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
-          <mxGeometry y="78" width="160" height="22" as="geometry" />
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-28" value="product_id (FK)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-25">
+          <mxGeometry y="76" width="160" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-29" value="order" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-29" value="order" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="4" y="360" width="160" height="112" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-30" value="order_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-29">
-          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-30" value="order_id (PK)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-29">
+          <mxGeometry y="26" width="160" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-31" value="order_product_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-29">
-          <mxGeometry y="52" width="160" height="26" as="geometry" />
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-31" value="order_product_id (FK)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-29">
+          <mxGeometry y="50" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-32" value="order_date" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-29">
-          <mxGeometry y="78" width="160" height="26" as="geometry" />
+          <mxGeometry y="76" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-33" value="product" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="454" y="360" width="160" height="112" as="geometry">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-33" value="product" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="472" y="360" width="160" height="112" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-34" value="product_id" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-33">
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-34" value="product_id (PK)&#xa;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=1" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-33">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-35" value="name" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="pvZoqLeMWJgB5qrzdJfA-33">
@@ -115,14 +115,14 @@
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-37" value="order_price" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="233" y="466" width="157" height="22" as="geometry" />
         </mxCell>
-        <mxCell id="pvZoqLeMWJgB5qrzdJfA-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERone;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-27" target="pvZoqLeMWJgB5qrzdJfA-35">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=ERoneToMany;endFill=0;strokeColor=default;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERone;startFill=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-31" target="pvZoqLeMWJgB5qrzdJfA-27">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="pvZoqLeMWJgB5qrzdJfA-45" value="1. 식별관계 -&amp;gt; 반드시 부모데이터가 존재해야 자식데이터가 존재한다&lt;br&gt;&amp;nbsp; &amp;nbsp; 비식별관계 -&amp;gt;&amp;nbsp; &amp;nbsp;부모데이터가 없어도 자식데이터를 생성할수있다" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="190" y="520" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pvZoqLeMWJgB5qrzdJfA-51" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;startArrow=ERzeroToMany;startFill=0;endArrow=ERone;endFill=0;strokeColor=default;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="pvZoqLeMWJgB5qrzdJfA-27" target="pvZoqLeMWJgB5qrzdJfA-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
